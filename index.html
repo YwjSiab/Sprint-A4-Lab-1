@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Visitor Registration</h2>
+        <!-- Registration form for visitors -->
+        <form id="visitor-form">
+            <!-- Visitor Name Field (Required) -->
+            <label for="name">Visitor Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="name-error"></span>
+
+            <!-- Email Field (Required) -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="email-error"></span>
+
+            <!-- Visit Date Field (Required) -->
+            <label for="date">Visit Date:</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error" id="date-error"></span>
+
+            <!-- Group Size Field (Required, must be numeric and at least 1) -->
+            <label for="group-size">Group Size:</label>
+            <input type="number" id="group-size" name="group-size" required min="1">
+            <span class="error" id="group-size-error"></span>
+
+            <!-- Special Accommodations Field (Optional) -->
+            <label for="accommodations">Special Accommodations:</label>
+            <textarea id="accommodations" name="accommodations"></textarea>
+
+            <!-- Submit Button to Register Visitor -->
+            <button type="submit">Register</button>
+        </form>
+        <!-- Success message container -->
+        <div id="success-message"></div>
+    </div>
+</body>
+</html>
